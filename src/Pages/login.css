@@ -1,0 +1,102 @@
+.login{
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #8556A4 0%, #2D2B52 100%) 0% 0% no-repeat padding-box;
+}
+.login .container{
+    display: flex;
+}
+.login .part-1{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #212529;
+    height: 100vh;
+}
+@media (max-width: 767px) {
+    .login .part-1 {
+        display: none;
+    }
+}
+.login .part-1 > .image{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.login .part-1 > .image > img{
+    width: 50%;
+}
+.login .part-1 .images{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 30px;
+    height: 50%;
+}
+.login .part-1 .images img:first-child{
+    max-width: 150px;
+    width: 25%;
+}
+.login .part-1 .images img:last-child{
+    max-width: 400px;
+    width: 70%
+}
+.login .part-2 {
+    border: 1px solid var(--unnamed-color-707070);
+    opacity: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .login .part-2 {
+        width: 100%;
+        border: none;
+        height: 100vh;
+    }
+}
+.login .part-2 .form {
+  height: 80%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login .part-2 .form h1 {
+    margin-top: 0px;
+    font: normal normal 87 48px/36px HelveticaNeue;
+    color: #ffffff;
+    letter-spacing: 0px;    
+}
+.login .part-2 .form .input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+.login .part-2 .form .input-field label {
+    color: #fff;
+    font: normal normal 300 12px/24px HelveticaNeue;
+}
+.login .part-2 .form .input-field input {
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #222222;
+  color: #fff;
+}
+.login .part-2 .form button {
+    background: #B6A3C2 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: #222222;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.login .part-2 .form button:hover {
+    background: #867790 0% 0% no-repeat padding-box;
+}
