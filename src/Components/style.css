@@ -1,0 +1,278 @@
+.DroppableStyles {
+    padding: 10px;
+    border-radius: 6px;
+    width: 320px;
+}
+.ColumnHeader {
+  background-color: #212529;
+  padding: 0 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.ColumnHeader img{
+  width: 17px;
+  margin-right: 15px;
+}
+.ColumnHeader label{
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.CardFooter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DragItem {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  background: #212529;
+  margin: 0 0 8px 0;
+  display: grid;
+  flex-direction: column;
+}
+.DragDropContextContainer {
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.ListGrid {
+  display: flex;
+}
+.DragItem .item-title{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-title input{
+  background: transparent;
+  border: none;
+  font: normal normal 300 16px/20px HelveticaNeue;
+  letter-spacing: 0px;
+  color: #f7f7f7;
+  width: 90%;
+}
+.DragItem .item-title button{
+    font-size: 12px;
+    width: 120px;
+    border-radius: 6px;
+    background-color: #8574b5;
+    color: white;
+    border: none;
+    font-weight: 500;
+    transition: .3s;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.DragItem .item-title button:hover{
+  background-color: #5f5188;
+  border: 1px solid #fff;
+}
+.DragItem .input-field{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.DragItem .input-field label{
+  font-size: 13px;
+  color: #6C757D;
+  width: 25%;
+  margin-right: 15px;
+  cursor: grab;
+}
+.DragItem .input-field input{
+  width: 60%;
+  background: transparent;
+  border: none;
+  font: normal normal 300 12px/20px HelveticaNeue;
+  letter-spacing: 0px;
+  color: #d8d8d8;
+}
+.DragItem .input-field .Importance{
+  position: relative;
+}
+.DragItem .input-field .Importance:hover ul{
+  display: block;
+  margin: 5px;
+}
+.DragItem .input-field .Importance ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  display: none;
+}
+.DragItem .input-field ul li{
+  padding: 0 5px;
+  cursor: pointer;
+}
+.DragItem .input-field ul .low{
+  background-color: #39AC95;
+  transition: .3s;
+}
+.DragItem .input-field ul .low:hover{
+  background-color: #297566;
+}
+.DragItem .input-field ul .high{
+  background-color: #DC3545;
+  transition: .3s;
+}
+.DragItem .input-field ul .high:hover{
+  background-color: #9f313c;
+}
+.DragItem .input-field ul .medium{
+  background-color: #FE913E;
+  transition: .3s;
+}
+.DragItem .input-field ul .medium:hover{
+  background-color: #c47335;
+}
+.DragItem .Importance-Low {
+  background: transparent;
+  border: none;
+  font: normal normal 300 12px/20px HelveticaNeue;
+  color: #d8d8d8;
+  background-color: #39AC95;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.DragItem .Importance-High {
+  background: transparent;
+  border: none;
+  font: normal normal 300 12px/20px HelveticaNeue;
+  color: #d8d8d8;
+  background-color: #DC3545;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.DragItem .Importance-Medium {
+  background: transparent;
+  border: none;
+  font: normal normal 300 12px/20px HelveticaNeue;
+  color: #d8d8d8;
+  background-color: #FE913E;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add Card Item */
+
+.DragItem-Add {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  background: #212529;
+  margin: 0 0 8px 0;
+  display: grid;
+  flex-direction: column;
+}
+
+.DragItem-Add .item-title{
+  padding-bottom: 10px;
+  text-align: center;
+}
+.DragItem-Add .item-title h3{
+  color: #fff;
+  margin: 5px 0 15px;
+}
+.DragItem-Add .input-field{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.DragItem-Add .input-field label{
+  font-size: 13px;
+  color: #6C757D;
+  width: 25%;
+  margin-right: 15px;
+  cursor: grab;
+}
+.DragItem-Add .input-field input{
+  width: 170px;
+  background: #696969;
+  border: 1px solid #696969;
+  font: normal normal 300 12px/20px HelveticaNeue;
+  letter-spacing: 0px;
+  color: white;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.DragItem-Add .input-field .select {
+  background-color: #696969;
+  border-radius: 6px;
+  padding: 4px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+/* .DragItem-Add .input-field .select .option-Low{
+  background-color: #39ac95;
+}
+
+.DragItem-Add .input-field .select .option-Medium{
+  background-color: #FE913E;
+}
+
+.DragItem-Add .input-field .select .option-High{
+  background-color: #DC3545;
+} */
+
+.DragItem-Add .button-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 5px;
+}
+
+.DragItem-Add .button-field > .add{
+  margin: 0 20px;
+  width: 60px;
+  border-radius: 6px;
+  padding: 4px 0;
+  background: transparent linear-gradient(180deg, #6E4C85 0%, #2D2B52 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.DragItem-Add .button-field > .add:hover{
+  transform: translatey(-5px);
+  -webkit-transform: translatey(-5px);
+  -moz-transform: translatey(-5px);
+  -ms-transform: translatey(-5px);
+  -o-transform: translatey(-5px);
+}
+
+.DragItem-Add .button-field > .cancel{
+  margin: 0 20px;
+  width: 60px;
+  border-radius: 6px;
+  padding: 4px 0;
+  background: transparent linear-gradient(180deg, #854c4c 0%, #782f2f 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.DragItem-Add .button-field > .cancel:hover{
+  transform: translatey(-5px);
+  -webkit-transform: translatey(-5px);
+  -moz-transform: translatey(-5px);
+  -ms-transform: translatey(-5px);
+  -o-transform: translatey(-5px);
+}

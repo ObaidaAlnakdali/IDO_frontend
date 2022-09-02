@@ -8,14 +8,19 @@ import Login from "./Pages/Login"
 import Dashboard from './Pages/Dashboard'
 import './App.css';
 
+import { ContextBody } from './context/Context'
+
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-    </Routes>
-  </BrowserRouter>
+    <ContextBody>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
+    </ContextBody>
+
   );
 }
 

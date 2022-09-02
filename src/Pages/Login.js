@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import logo from '../image/Logo.png'
 import man from '../image/Man.png'
 import woman from '../image/Woman.png'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import axios from 'axios'
 import './login.css';
 
 function Login() {
@@ -19,9 +20,17 @@ function Login() {
     }
   }
 
-
   const signin = () => {
-    navigate(`/dashboard`)
+    let body = {email: email, password: password}
+    axios
+    .post(`https://localhost:7119/api/User/login`, body)
+    .then(res => {
+      console.log(res.data)
+      localStorage.setItem('id', res.data[0].id)
+      localStorage.setItem('name', res.data[0].name)
+      localStorage.setItem('email', res.data[0].email)
+      navigate(`/dashboard`)
+    }).catch(err => console.log(err.response.data))
   }
 
   return (
