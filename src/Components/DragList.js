@@ -28,7 +28,7 @@ function DragList() {
   const [dataRes, setDataRes] = React.useState([]);
   const [elements, setElements] = React.useState(datatest);
   const id = localStorage.getItem('id')
-  const { render, setRender, search } = useContext(Context)
+  const { render, setRender, search, addcard } = useContext(Context)
 
 
 
@@ -57,6 +57,11 @@ function DragList() {
   useEffect(() => {
     getItems()
   }, []);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    getItems()
+  }, [render]);
 
 useEffect(() => {
   let data = dataRes.filter(i => {

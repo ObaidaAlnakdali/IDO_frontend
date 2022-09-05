@@ -8,7 +8,7 @@ function AddItemCard() {
   const id = localStorage.getItem('id')
   const importances = ['Low', 'Medium', 'High']
 
-  const { setShowAddCard, render, setRender } = useContext(Context)
+  const { setShowAddCard, render, setRender, setaddcard, addcard } = useContext(Context)
 
    const selectImportance = (e) => {
     console.log(e.target.value)
@@ -40,8 +40,9 @@ function AddItemCard() {
     .then(res => {
       alert('Add item is success')
       setShowAddCard(false)
-      setRender(!render)
+      setaddcard(!render)
     }).catch(err => console.log(err))
+    window.location.reload(false)
   }
 
   return (

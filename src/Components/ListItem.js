@@ -81,7 +81,6 @@ const ListItem = ({  item, index }) => {
                     <li className='high' onClick={() => handleImprtance('High')}>High</li>
                   </ul>
                 </div>
-
             </div>
             
             {/* <div className="CardHeader">Obaida</div>
