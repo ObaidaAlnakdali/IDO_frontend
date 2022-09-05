@@ -58,11 +58,6 @@ function DragList() {
     getItems()
   }, []);
 
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    getItems()
-  }, [render]);
-
 useEffect(() => {
   let data = dataRes.filter(i => {
     return (
